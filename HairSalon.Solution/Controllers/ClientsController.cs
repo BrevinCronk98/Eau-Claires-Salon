@@ -37,10 +37,9 @@ namespace HairSalon.Controllers
             return RedirectToAction("Index");
         }
 
-        [HttpGet,ActionName("Details")]
         public ActionResult Details(int id)
         {
-            Client thisClient = _db.Clients.FirstOrDefault(client => client.ClientId == id);
+            Client thisClient = _db.Clients.FirstOrDefault(clients => clients.ClientId == id);
             return View(thisClient);
         }
 
