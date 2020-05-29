@@ -1,12 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
-using ToDoList.Models;
+using HairSalon.Models;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 
 namespace HairSalon.Controllers
 {
-    public class StylistsControllers : Controllers
+    public class StylistsController : Controller
     {
         private readonly HairSalonContext _db;
 
@@ -30,7 +30,7 @@ namespace HairSalon.Controllers
         public ActionResult Create(Stylist stylist)
         {
             _db.Stylists.Add(stylist);
-            _ddb.SaveChanges();
+            _db.SaveChanges();
             return RedirectToAction("Index");
         }
 
