@@ -1,4 +1,4 @@
-# _Eau Clairs Salon_
+# _Eau Claires Salon_
 
 #### _This is a live web application build using C# and Entity and MySQL databases." May 129th, 2020_
 
